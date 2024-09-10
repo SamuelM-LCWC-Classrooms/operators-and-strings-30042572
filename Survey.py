@@ -37,7 +37,7 @@ def ask_questions():
                 # Convert raw input to the expected type
                 if question._Question__value_type == int:
                     answer = int(raw_input)
-                elif question._Question__value_type == bool:
+                elif question._Question__value_type == bool and (raw_input == "True" or raw_input == "False"):
                     answer = bool(raw_input)
                 elif question._Question__value_type == str:
                     answer = raw_input
