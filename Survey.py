@@ -21,11 +21,11 @@ class Question:
             return False
 
 questions = [
-    Question("What is your name: ", str),
-    Question("What is your age: ", int),
-    Question("What is your favourite color: ", str),
-    Question("How many hours have you been awake: ", int),
-    Question("Do you smoke or vape: (True/False) ", bool)
+    Question("What is your name", str),
+    Question("What is your age", int),
+    Question("What is your favourite color", str),
+    Question("How many hours have you been awake", int),
+    Question("Do you smoke or vape (True/False)", bool)
 ]
 
 def ask_questions():
@@ -33,7 +33,7 @@ def ask_questions():
         answer = None
         while answer is None or not question.set_answer(answer):
             try:
-                raw_input = input(question.get_question())
+                raw_input = input(question.get_question() + ": ")
                 # Convert raw input to the expected type
                 if question._Question__value_type == int:
                     answer = int(raw_input)
@@ -48,7 +48,7 @@ def ask_questions():
 
 def print_questions():
     for question in questions:
-        print(f"You were asked " + "\033[96m" + f"{question.get_question()}" + "\033[0m" + "and you answered" + "\033[92m" + f": {question.get_answer()}" + "\033[0m")
+        print(f"You were asked: " + "\033[96m" + f"{question.get_question()}" + "\033[0m" + " and you answered: " + "\033[92m" + f"{question.get_answer()}" + "\033[0m")
 
 ask_questions()
 print_questions()
