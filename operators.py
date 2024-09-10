@@ -13,7 +13,7 @@ def task_1():
     x = 10
     y = 10
 
-    return x == y # Edit only this line
+    return x != y # Edit only this line
 
 # 2.
 def task_2():
