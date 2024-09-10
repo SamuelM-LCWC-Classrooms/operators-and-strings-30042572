@@ -48,7 +48,7 @@ def ask_questions():
 
 def print_questions():
     for question in questions:
-        print(question.get_answer())
+        print(f"You were asked " + "\033[96m" + f"{question.get_question()}" + "\033[0m" + "and you answered" + "\033[92m" + f": {question.get_answer()}" + "\033[0m")
 
 ask_questions()
 print_questions()
