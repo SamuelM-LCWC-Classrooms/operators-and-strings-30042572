@@ -24,8 +24,16 @@ def task_2():
 def task_3(): # Store your completed string in a variable called message
     message = None
 
-    # Write your code here
-
+    # Write your code here 
+    def get_an_int():
+        while True:
+            try:
+                return int(input("Enter your age: "))
+            except:
+                print("Invalid age.")
+    name = input("Enter your name: ")
+    age = get_an_int()
+    message = f"Hello, {name}, you are {age} years old!"
     # -------------------#
 
     return message
