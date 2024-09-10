@@ -25,7 +25,10 @@ questions = [
     Question("What is your age", int),
     Question("What is your favourite color", str),
     Question("How many hours have you been awake", int),
-    Question("Do you smoke or vape (True/False)", bool)
+    Question("Do you smoke or vape (True/False)", bool),
+    Question("Do you have any pets (True/False)", bool),
+    Question("Do you have any siblings (True/False)", bool),
+    Question("What is your favourite animal", str)
 ]
 
 def ask_questions():
