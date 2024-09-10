@@ -1,3 +1,4 @@
+# Overengineered for the assignment, don't copy but feel free to look and ask.
 class Question:
     def __init__(self, question, value_type):
         self.__question = question
