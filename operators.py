@@ -18,7 +18,7 @@ def task_1():
 # 2.
 def task_2():
     data = input("Enter something: ")
-    return type(data) == int
+    return type(data) == str
 
 #3.
 def task_3(): # Store your completed string in a variable called message
